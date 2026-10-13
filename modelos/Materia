@@ -1,19 +1,1 @@
-class Asignatura:
-    facultad = "Ingeniería"
-
-    def __init__(self, nombre, codigo, creditos):
-        self.nombre = nombre
-        self.codigo = codigo
-        self.creditos = creditos
-
-    def registrar(self):
-        print(f"Asignatura {self.nombre} registrada.")
-
-    @classmethod
-    def cambiar_facultad(cls, nueva):
-        cls.facultad = nueva
-
-    @staticmethod
-    def informacion():
-        print("Las asignaturas poseen créditos académicos.")
 
