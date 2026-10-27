@@ -85,7 +85,7 @@ class ProfesorTitular(Profesor):
         super().__init__(idProfesor, cedula, nombre, apellido)
         self.categoria = categoria
 
-# Persona -> Estudiante -> EstudianteBecado
+
 class EstudianteBecado(Estudiante):
     def __init__(self, idEstudiante: int, cedula: str, nombre: str, apellido: str, nivel: int, tipo_beca: str):
         super().__init__(idEstudiante, cedula, nombre, apellido, nivel)
@@ -105,7 +105,7 @@ class HorarioPresencial(Horario, Aula):
 
 class AyudanteCatedra(Estudiante, Profesor):
     def __init__(self, idEstudiante, idProfesor, cedula, nombre, apellido, nivel, materia_asistida):
-        # En herencia múltiple debemos llamar ambos init
+        
         Estudiante.__init__(self, idEstudiante, cedula, nombre, apellido, nivel)
         self.idProfesor = idProfesor
         self.materia_asistida = materia_asistida
