@@ -7,9 +7,9 @@ class Estudiante:
         self.__nombre = nombre
         self.__apellido = apellido
         self.__nivel = nivel
-        self.__materias = []  # relación "cursa": 0..* materias
+        self.__materias = [] 
 
-    # ---------- Getters y setters (encapsulamiento) ----------
+   
     @property
     def id_estudiante(self):
         return self.__id_estudiante
@@ -49,8 +49,6 @@ class Estudiante:
     @property
     def materias(self):
         return list(self.__materias)
-
-    # ---------- Métodos del UML ----------
     def registrar(self):
         """Registra al estudiante en el sistema."""
         print(f"Estudiante registrado: {self.__nombre} {self.__apellido}")
