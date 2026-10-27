@@ -8,7 +8,7 @@ class Profesor:
         self.__apellido = apellido
         self.__horarios_asignados = []  # horarios en los que ya da clase
 
-    # ---------- Getters y setters (encapsulamiento) ----------
+    
     @property
     def id_profesor(self):
         return self.__id_profesor
@@ -41,7 +41,7 @@ class Profesor:
     def horarios_asignados(self):
         return list(self.__horarios_asignados)
 
-    # ---------- Métodos del UML ----------
+    
     def registrar(self):
         """Registra al profesor en el sistema."""
         print(f"Profesor registrado: {self.__nombre} {self.__apellido}")
@@ -60,7 +60,7 @@ class Profesor:
                 return False
         return True
 
-    # ---------- Apoyo para la asignación ----------
+    
     def agregar_horario(self, horario):
         if horario not in self.__horarios_asignados:
             self.__horarios_asignados.append(horario)
